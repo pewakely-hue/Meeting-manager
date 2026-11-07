@@ -30,27 +30,58 @@ const uid=()=>Math.random().toString(36).slice(2,10);
 const today=()=>new Date().toISOString().slice(0,10);
 const plusDays=(d,n)=>{let x=new Date(d+'T12:00:00');x.setDate(x.getDate()+n);return x.toISOString().slice(0,10)};
 const categories={
-"Project criteria":["Client requirements","Employer's Requirements","Design brief","Scope changes","Performance requirements","Design assumptions"],
-"Programme":["Design programme","Information release dates","Construction programme","Procurement lead times","Critical path","Design deadlines"],
-"Costs & commercial":["Cost plan","Value engineering","Budget pressures","Variations","Provisional sums","Additional scope"],
-"Electrical design":["Electrical load assessment","Incoming NIE supply","Substation / transformer","LV distribution","Containment","Lighting design","Emergency lighting","Small power","Earthing & bonding","Lightning protection","PV / renewables","EV charging"],
-"Mechanical coordination":["Mechanical plant loads","Plantroom coordination","HVAC interfaces","BMS interfaces","Builder's work requirements"],
-"Fire & life safety":["Fire alarm","Emergency lighting","Disabled refuge / EVC","Fire stopping","Cause and effect"],
-"ICT & security":["Structured cabling","Data cabinets","Wi-Fi","CCTV","Access control","Intruder alarm","PA / voice alarm"],
-"Drawings & information":["Drawing status","RFI","Technical submissions","Specifications","Design changes","Information required"],
-"Site & construction":["Installation progress","Site queries","Inspections","Defects","Testing & commissioning","Handover"],
-"Risks & decisions":["Design risk","Technical risk","Outstanding decision","Design assumption","Client approval"]
+"Project Management and Programme":["Project objectives and scope","Project programme","Design deliverables and information release","Project roles and responsibilities","Client requirements and approvals","Project risks and dependencies","Change control and decisions","Meeting and communication arrangements"],
+"Design Coordination":["Architectural coordination","Structural coordination","M&E spatial coordination","Plantroom coordination","Risers and service routes","Ceiling voids and builders work","BIM / Revit model coordination","Specialist subcontractor interfaces","Access and maintenance clearances"],
+"Existing Building and Site Constraints":["Existing services surveys","Existing electrical infrastructure","Existing mechanical infrastructure","Existing capacity and spare capacity","Retained and redundant equipment","Phasing and decanting","Occupied building constraints","Heritage and fabric constraints","Site access and installation constraints"],
+"M&E Design and Technical Proposals":["Incoming electrical supply and HV/LV distribution","Maximum demand and load assessment","Small power and containment","Lighting and emergency lighting","Fire alarm and life safety systems","Heating and cooling strategy","Ventilation and controls","Public health services","ICT and structured cabling","AV, security and access control","Standby generation and UPS","Testing and commissioning strategy"],
+"Energy and Sustainability":["All-electric design strategy","Heat pumps and low-carbon heating","Photovoltaics and renewables","EV charging infrastructure","Energy demand and consumption","Metering and energy monitoring","BREEAM and sustainability targets","Operational performance and efficiency","Carbon reduction opportunities"],
+"Compliance and Technical Assurance":["Building Regulations compliance","BS / EN / HTM / IS standards","Fire strategy and compartmentation","Electrical safety and earthing","Design calculations and technical assessments","Equipment specifications and selections","Technical submissions and approvals","Design risk assessments","Inspection, testing and certification"],
+"Procurement, Cost and Value Engineering":["Cost plan and budget","Tender documentation","Procurement strategy and lead times","Contractor proposals and alternatives","Value engineering options","Cost savings and scope reductions","Variations and compensation events","Provisional sums and quotations"],
+"Construction, Commissioning and Handover":["Construction progress","Contractor coordination","Requests for information (RFIs)","Site inspections and quality issues","Installation sequencing and access","Testing and commissioning","Witness testing and demonstrations","Training and O&M manuals","Defects and outstanding works","Practical completion and handover"]
 };
 const prompts={
-"Incoming NIE supply":["Maximum demand to be confirmed.","NIE application to be submitted.","Harmonic study requirement to be clarified with NIE.","Substation location to be agreed.","Connection capacity subject to NIE approval.","Existing supply capacity to be verified."],
-"Lighting design":["Lighting levels to be confirmed against room use.","Lighting control strategy to be coordinated.","Emergency lighting design to be reviewed.","Luminaire selection / samples required."],
-"Containment":["Containment routes to be coordinated with structure and services.","Cable tray / basket sizes to be confirmed.","Access and maintenance clearances to be maintained."],
-"Fire alarm":["Fire alarm category and extent to be confirmed.","Cause and effect matrix to be agreed.","Interface with door access / lifts / plant to be coordinated."],
-"Electrical load assessment":["Connected loads to be updated.","Maximum demand and diversity assumptions to be reviewed.","Spare capacity and future provision to be confirmed."],
-"Testing & commissioning":["Commissioning programme to be agreed.","Witness testing requirements to be confirmed.","O&M information and certification required."]
+"Project objectives and scope":["Are the project objectives and scope still aligned?","Has any additional or omitted scope been identified?","Are responsibilities and interfaces clearly defined?"],
+"Project programme":["Is the design and construction programme on track?","What are the critical path activities or upcoming milestones?","Are there programme risks or dependencies requiring action?"],
+"Design deliverables and information release":["What drawings, schedules or specifications are required?","Are information release dates agreed?","Is any information outstanding from the design team or client?"],
+"Client requirements and approvals":["What client decisions or approvals are outstanding?","Have the Employer's Requirements changed?","Who is responsible for obtaining approval and by when?"],
+"Project risks and dependencies":["What new project or technical risks have emerged?","Are existing risks being adequately mitigated?","Are there dependencies on third parties or statutory bodies?"],
+"Architectural coordination":["Are plant, equipment and service routes coordinated with the architectural layout?","Are room layouts, ceiling zones and access panels agreed?","Are there any outstanding architectural details affecting M&E?"],
+"Structural coordination":["Are structural openings, penetrations and supports agreed?","Are loads and plinth requirements confirmed?","Are there clashes with beams, slabs or structural elements?"],
+"M&E spatial coordination":["Are the services coordinated within the available space?","Are ceiling voids and risers sufficient?","Are access and maintenance clearances maintained?"],
+"Plantroom coordination":["Are plantroom layouts and equipment footprints agreed?","Are replacement routes, lifting provisions and access adequate?","Are electrical supplies, drainage, ventilation and controls coordinated?"],
+"BIM / Revit model coordination":["Are the latest models being used by all disciplines?","Have clashes been reviewed and assigned?","Are levels, coordinates and model information aligned?"],
+"Existing services surveys":["What surveys or investigations have been completed?","Are any further intrusive surveys required?","Have survey findings been incorporated into the design?"],
+"Existing electrical infrastructure":["What existing supplies, switchgear and distribution are available?","Has capacity and condition been verified?","What is to be retained, upgraded or replaced?"],
+"Existing mechanical infrastructure":["What existing plant and distribution can be retained?","Have condition, capacity and performance been established?","Are isolation and changeover arrangements understood?"],
+"Existing capacity and spare capacity":["Has the existing maximum demand been established?","Is there sufficient capacity for the proposed loads and future provision?","Is a network or utility upgrade required?"],
+"Incoming electrical supply and HV/LV distribution":["Has the maximum demand and supply capacity been agreed?","Are NIE / utility applications and connection requirements progressing?","Are substation location, transformer rating and intake arrangements confirmed?","Are harmonic studies, power quality or protection studies required?"],
+"Maximum demand and load assessment":["Have connected loads and diversity assumptions been updated?","Are spare capacity and future loads included?","Are phase balancing and power factor considerations addressed?"],
+"Lighting and emergency lighting":["Are lighting levels and luminaire selections appropriate?","Are lighting controls and interfaces agreed?","Is emergency lighting coverage, duration and testing strategy confirmed?"],
+"Fire alarm and life safety systems":["Is the fire alarm category and extent agreed?","Are cause-and-effect and interfaces coordinated?","Are EVC, refuge and disabled toilet alarm requirements addressed?"],
+"Heating and cooling strategy":["Is the heating and cooling strategy agreed?","Are plant capacities, zoning and controls coordinated?","Are electrical loads and plant locations confirmed?"],
+"Ventilation and controls":["Are ventilation rates and plant duties confirmed?","Are duct routes, access and builders work coordinated?","Are BMS points, control interfaces and commissioning requirements agreed?"],
+"All-electric design strategy":["Are all building loads accounted for in the electrical demand?","Are supply capacity and resilience adequate?","Are plant and operational strategies coordinated?"],
+"Heat pumps and low-carbon heating":["Are heat pump duties, locations and performance confirmed?","Are electrical supplies and peak demand assessed?","Are acoustic, defrost and maintenance requirements addressed?"],
+"Photovoltaics and renewables":["Is the proposed PV capacity and roof area confirmed?","Are inverter locations, cabling and grid connection requirements agreed?","Are export limitation and monitoring requirements understood?"],
+"EV charging infrastructure":["What number and type of chargers are proposed?","Is spare electrical capacity available?","Are load management, metering and future expansion addressed?"],
+"Building Regulations compliance":["Have applicable statutory requirements been identified?","Are any compliance gaps or departures outstanding?","Who is responsible for submissions and approvals?"],
+"Fire strategy and compartmentation":["Are service penetrations and fire stopping coordinated?","Are fire-rated cable routes and compartment boundaries identified?","Are fire alarm and smoke control interfaces agreed?"],
+"Design calculations and technical assessments":["Which calculations or studies are outstanding?","Are assumptions and input data agreed?","Who will review and approve the results?"],
+"Cost plan and budget":["Are current proposals within the cost plan?","Have cost movements and risks been identified?","Are cost decisions required from the client?"],
+"Value engineering options":["What alternative solutions have been considered?","What are the capital, programme and operational implications?","Has the impact on performance and compliance been assessed?"],
+"Procurement strategy and lead times":["Are long-lead items identified and ordered in time?","Are technical submittals and approvals progressing?","Are procurement risks affecting the programme?"],
+"Construction progress":["Is installation progressing in line with programme?","Are there constraints or outstanding information affecting progress?","What work is planned before the next meeting?"],
+"Requests for information (RFIs)":["What technical clarification is required?","Who is responsible for responding?","Is the response affecting cost, programme or design?"],
+"Testing and commissioning":["Is the commissioning programme agreed?","Are witnessing and integrated testing requirements defined?","Are access, power, water and controls available for testing?"],
+"Training and O&M manuals":["Are O&M manuals and asset information being compiled?","What client training and demonstrations are required?","Are certificates, test results and record drawings complete?"]
 };
 let db=load();
-if(!db.library)db.library={categories:JSON.parse(JSON.stringify(categories)),prompts:JSON.parse(JSON.stringify(prompts))};
+if(!db.library)db.library={categories:{},prompts:{}};
+if(!db.library.categories)db.library.categories={};
+if(!db.library.prompts)db.library.prompts={};
+// Add the expanded standard library without overwriting the user's existing edits.
+Object.entries(categories).forEach(([aspect,items])=>{if(!db.library.categories[aspect])db.library.categories[aspect]=items.slice();});
+Object.entries(prompts).forEach(([subject,items])=>{if(!db.library.prompts[subject])db.library.prompts[subject]=items.slice();});
 function subjects(){return db.library.categories}
 function promptLibrary(){return db.library.prompts}
 
