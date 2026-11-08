@@ -423,10 +423,16 @@ const prompts={
     "Obtain the information, approval or response required for practical completion and handover."
   ]
 };
-let db=load();
-if(!db.library)db.library={categories:{},prompts:{}};
-if(!db.library.categories)db.library.categories={};
-if(!db.library.prompts)db.library.prompts={};
+let db=load()||{};
+// Defensive migration: older or partially restored browser data must never prevent the app from starting.
+db.projects=Array.isArray(db.projects)?db.projects:[];
+db.meetings=Array.isArray(db.meetings)?db.meetings:[];
+db.actions=Array.isArray(db.actions)?db.actions:[];
+db.personal=Array.isArray(db.personal)?db.personal:[];
+db.templates=(db.templates&&typeof db.templates==='object'&&!Array.isArray(db.templates))?db.templates:{};
+if(!db.library||typeof db.library!=='object'||Array.isArray(db.library))db.library={categories:{},prompts:{}};
+if(!db.library.categories||typeof db.library.categories!=='object'||Array.isArray(db.library.categories))db.library.categories={};
+if(!db.library.prompts||typeof db.library.prompts!=='object'||Array.isArray(db.library.prompts))db.library.prompts={};
 // Add the expanded standard library without overwriting the user's existing edits.
 Object.entries(categories).forEach(([aspect,items])=>{if(!db.library.categories[aspect])db.library.categories[aspect]=items.slice();});
 Object.entries(prompts).forEach(([subject,items])=>{if(!db.library.prompts[subject])db.library.prompts[subject]=items.slice();});
@@ -505,6 +511,6 @@ async function exportCalendar(){let ev=[];db.meetings.forEach(m=>ev.push({title:
 $('#exportBackup').onclick=()=>download(JSON.stringify(db,null,2),'meeting-manager-backup.json','application/json');
 $('#importBackup').onclick=()=>$('#backupFile').click();
 $('#backupFile').onchange=async e=>{let f=e.target.files[0];if(!f)return;try{let data=JSON.parse(await f.text());if(!data.projects||!data.meetings||!data.actions)throw Error();if(confirm('Restore this backup? This replaces the data currently stored in this browser.')){db={projects:data.projects,meetings:data.meetings,actions:data.actions,personal:data.personal||[],templates:data.templates||{},library:data.library||{categories:JSON.parse(JSON.stringify(categories)),prompts:JSON.parse(JSON.stringify(prompts))}};save();page('dashboard');toast('Backup restored')}}catch(err){alert('This does not appear to be a valid Meeting Manager backup.')}e.target.value=''};
-page('dashboard');
+try{page('dashboard')}catch(error){console.error('Meeting Manager startup error:',error);$('#content').innerHTML='<section class="panel"><h2>Meeting Manager could not load this page</h2><p>The saved data has been protected. Please use Backup data if available, then refresh the page. If the problem continues, send a screenshot of the browser console error.</p></section>'}
 if('serviceWorker' in navigator) window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
 </script></body></html>
