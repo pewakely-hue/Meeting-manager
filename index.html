@@ -447,6 +447,7 @@ function toast(s){let t=$('#toast');t.textContent=s;t.style.display='block';setT
 function modal(title,html){$('#modalTitle').textContent=title;$('#modalBody').innerHTML=html;$('#modalback').classList.add('show')}
 function closeModal(){$('#modalback').classList.remove('show')}
 $('#closeModal').onclick=closeModal;$('#modalback').onclick=e=>{if(e.target.id==='modalback')closeModal()};
+function templates(){$('#content').innerHTML=head('Quick templates','Reusable meeting formats and prompts.')+`<section class="panel"><div class="empty">Use the subject and prompt library when capturing a meeting. Choose a project and start a new meeting to access the built-in M&E prompts.</div><p style="text-align:center;margin-top:14px"><button class="btn primary" onclick="page('meetings')">Go to meetings</button></p></section>`}
 function page(p){$$('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.page===p));({dashboard,meetings,actions,calendar,projects,personal,templates}[p]||dashboard)()}
 $$('.navbtn').forEach(b=>b.onclick=()=>page(b.dataset.page));
 function head(title,sub,btn=''){return `<div class="pagehead"><div><h1>${title}</h1><div class="sub">${sub}</div></div>${btn}</div>`}
