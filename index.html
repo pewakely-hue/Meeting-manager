@@ -9,6 +9,18 @@
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.app{min-height:100vh}.topbar{background:var(--navy);color:#fff;padding:15px max(18px,calc((100vw - 1200px)/2));display:flex;align-items:center;justify-content:space-between;gap:14px}.brand{font-size:19px;font-weight:750;letter-spacing:.2px}.brand small{display:block;font-size:11px;font-weight:450;opacity:.75}.top-actions{display:flex;gap:8px;flex-wrap:wrap}.btn{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:9px;padding:9px 13px;font-weight:650}.btn.primary{background:var(--teal);border-color:var(--teal);color:#fff}.btn.dark{background:#ffffff18;border-color:#ffffff40;color:#fff}.btn.danger{color:var(--red)}.btn.small{padding:6px 9px;font-size:13px}.layout{max-width:1200px;margin:auto;padding:20px;display:grid;grid-template-columns:220px minmax(0,1fr);gap:20px}.sidebar{display:flex;flex-direction:column;gap:6px}.navbtn{border:0;background:transparent;text-align:left;padding:12px;border-radius:9px;color:#536571;font-weight:650}.navbtn.active{background:#e1ecef;color:var(--navy)}.navbtn span{display:inline-block;width:26px}.navlabel{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:#92a0a8;margin:16px 10px 5px}.content{min-width:0}.pagehead{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin:2px 0 18px}.pagehead h1{margin:0;font-size:25px;letter-spacing:-.5px}.sub{color:var(--muted);font-size:13px;margin-top:4px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.stat,.panel,.card{background:var(--card);border:1px solid var(--line);border-radius:13px;box-shadow:var(--shadow)}.stat{padding:15px}.stat strong{font-size:27px;display:block}.stat span{font-size:12px;color:var(--muted)}.panel{padding:17px;margin-bottom:14px}.panel h2{font-size:16px;margin:0 0 13px}.split{display:grid;grid-template-columns:1.2fr .8fr;gap:14px}.list{display:flex;flex-direction:column;gap:8px}.item{border:1px solid var(--line);border-radius:10px;padding:12px;display:flex;gap:10px;align-items:flex-start;background:#fff}.itemmain{min-width:0;flex:1}.itemtitle{font-weight:700}.meta{font-size:12px;color:var(--muted);margin-top:3px}.tag{display:inline-block;font-size:11px;font-weight:700;padding:3px 7px;border-radius:20px;background:#eaf0f3;color:#52636d;margin:3px 3px 0 0}.tag.high{background:#fbe6e4;color:#a43131}.tag.medium{background:#fff1d9;color:#88550b}.tag.low{background:#e4f2ed;color:#24694f}.empty{padding:24px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:10px}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.field{display:flex;flex-direction:column;gap:5px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:700;color:#52636d}.field input,.field select,.field textarea,.search{width:100%;border:1px solid #cfd9df;border-radius:8px;padding:10px;background:#fff;color:var(--ink);min-width:0}.field textarea{min-height:84px;resize:vertical}.muted{color:var(--muted)}.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}.tab{border:1px solid var(--line);border-radius:8px;background:#fff;padding:8px 11px;font-size:13px;font-weight:650}.tab.active{background:var(--navy);border-color:var(--navy);color:#fff}.categorygrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.catbtn{border:1px solid var(--line);background:#fff;border-radius:8px;text-align:left;padding:10px;font-size:13px;font-weight:650}.catbtn.active{border:2px solid var(--teal);background:#edf6f2;padding:9px}.quickprompts{display:flex;flex-wrap:wrap;gap:6px}.prompt{border:1px solid #cbd9df;background:#f8fbfc;border-radius:20px;padding:6px 10px;font-size:12px;color:#365260}.calendarhead{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px}.calendar{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px}.dayname{text-align:center;font-size:11px;color:var(--muted);font-weight:700;padding:5px}.day{min-height:105px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:6px;min-width:0}.daynum{font-size:11px;color:var(--muted);margin-bottom:5px}.event{font-size:10px;padding:4px 5px;border-radius:5px;margin:3px 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:#e1edf5;color:#28536d}.event.personal{background:#eee7f7;color:#65488c}.event.meeting{background:#e2f1e9;color:#28694e}.event.overdue{background:#fbe4e2;color:#9f3434}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.filters select,.filters input{border:1px solid var(--line);border-radius:8px;padding:8px;background:#fff}.check{width:18px;height:18px;accent-color:var(--teal);margin-top:2px}.modalback{position:fixed;inset:0;background:#10232f88;display:none;align-items:center;justify-content:center;padding:16px;z-index:5}.modalback.show{display:flex}.modal{width:min(680px,100%);max-height:92vh;overflow:auto;background:#fff;border-radius:15px;padding:20px;box-shadow:0 20px 70px #0004}.modalhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.modalhead h2{margin:0;font-size:19px}.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:#17384a;color:#fff;padding:10px 16px;border-radius:9px;display:none;z-index:8}.hide{display:none!important}.footer{font-size:11px;color:#8a989f;text-align:center;padding:16px}.pillrow{display:flex;gap:7px;flex-wrap:wrap}.pill{border-radius:20px;padding:5px 9px;background:#edf2f4;font-size:11px;font-weight:650}.actionsrow{display:flex;gap:6px;flex-wrap:wrap}
 @media(max-width:760px){.layout{display:block;padding:13px}.sidebar{position:sticky;top:0;z-index:3;background:var(--bg);flex-direction:row;overflow:auto;padding:5px 0 10px}.navlabel{display:none}.navbtn{white-space:nowrap;padding:9px 11px;font-size:13px}.navbtn span{width:auto;margin-right:5px}.topbar{padding:12px 14px}.top-actions .btn{padding:7px 9px;font-size:12px}.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}.stat{padding:10px}.stat strong{font-size:22px}.split{grid-template-columns:1fr}.pagehead h1{font-size:22px}.day{min-height:83px;padding:4px}.event{font-size:9px;padding:3px}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.categorygrid{grid-template-columns:1fr 1fr}}
 @media(max-width:420px){.day{min-height:70px}.dayname{font-size:9px}.event{font-size:8px}.stat span{font-size:10px}}
+
+.weekagenda{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+.weekday{display:grid;grid-template-columns:130px minmax(0,1fr);gap:12px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.weekdayhead{display:flex;flex-direction:column;gap:4px}
+.weekdayhead strong{font-size:15px}.weekdayhead span{font-size:13px;color:var(--muted)}
+.weekdayevents{display:flex;flex-direction:column;gap:7px;min-width:0}
+.weekevent{display:flex;align-items:center;gap:10px;width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:8px;text-align:left;background:var(--surface2);color:var(--text);cursor:pointer;font:inherit}
+.weekeventtitle{font-weight:600;overflow-wrap:anywhere;flex:1}
+.weekeventtype{font-size:11px;color:var(--muted);white-space:nowrap}
+.weekempty{font-size:12px;color:var(--muted);padding:8px 0}
+.btn.danger{color:#a52b2b;border-color:#e6baba}
+@media(max-width:760px){.weekday{grid-template-columns:1fr;gap:8px}.weekdayhead{flex-direction:row;align-items:center;justify-content:space-between}.weekevent{padding:12px}.weekeventtitle{font-size:14px}}
 </style></head>
 <body><div class="app">
 <header class="topbar"><div class="brand">Meeting Manager<small>Project notes · Actions · Personal planning</small></div><div class="top-actions"><button class="btn dark" id="exportBackup">Backup data</button><button class="btn dark" id="importBackup">Restore</button><input id="backupFile" type="file" accept="application/json" hidden></div></header>
@@ -40,40 +52,376 @@ const categories={
 "Construction, Commissioning and Handover":["Construction progress","Contractor coordination","Requests for information (RFIs)","Site inspections and quality issues","Installation sequencing and access","Testing and commissioning","Witness testing and demonstrations","Training and O&M manuals","Defects and outstanding works","Practical completion and handover"]
 };
 const prompts={
-"Project objectives and scope":["Are the project objectives and scope still aligned?","Has any additional or omitted scope been identified?","Are responsibilities and interfaces clearly defined?"],
-"Project programme":["Is the design and construction programme on track?","What are the critical path activities or upcoming milestones?","Are there programme risks or dependencies requiring action?"],
-"Design deliverables and information release":["What drawings, schedules or specifications are required?","Are information release dates agreed?","Is any information outstanding from the design team or client?"],
-"Client requirements and approvals":["What client decisions or approvals are outstanding?","Have the Employer's Requirements changed?","Who is responsible for obtaining approval and by when?"],
-"Project risks and dependencies":["What new project or technical risks have emerged?","Are existing risks being adequately mitigated?","Are there dependencies on third parties or statutory bodies?"],
-"Architectural coordination":["Are plant, equipment and service routes coordinated with the architectural layout?","Are room layouts, ceiling zones and access panels agreed?","Are there any outstanding architectural details affecting M&E?"],
-"Structural coordination":["Are structural openings, penetrations and supports agreed?","Are loads and plinth requirements confirmed?","Are there clashes with beams, slabs or structural elements?"],
-"M&E spatial coordination":["Are the services coordinated within the available space?","Are ceiling voids and risers sufficient?","Are access and maintenance clearances maintained?"],
-"Plantroom coordination":["Are plantroom layouts and equipment footprints agreed?","Are replacement routes, lifting provisions and access adequate?","Are electrical supplies, drainage, ventilation and controls coordinated?"],
-"BIM / Revit model coordination":["Are the latest models being used by all disciplines?","Have clashes been reviewed and assigned?","Are levels, coordinates and model information aligned?"],
-"Existing services surveys":["What surveys or investigations have been completed?","Are any further intrusive surveys required?","Have survey findings been incorporated into the design?"],
-"Existing electrical infrastructure":["What existing supplies, switchgear and distribution are available?","Has capacity and condition been verified?","What is to be retained, upgraded or replaced?"],
-"Existing mechanical infrastructure":["What existing plant and distribution can be retained?","Have condition, capacity and performance been established?","Are isolation and changeover arrangements understood?"],
-"Existing capacity and spare capacity":["Has the existing maximum demand been established?","Is there sufficient capacity for the proposed loads and future provision?","Is a network or utility upgrade required?"],
-"Incoming electrical supply and HV/LV distribution":["Has the maximum demand and supply capacity been agreed?","Are NIE / utility applications and connection requirements progressing?","Are substation location, transformer rating and intake arrangements confirmed?","Are harmonic studies, power quality or protection studies required?"],
-"Maximum demand and load assessment":["Have connected loads and diversity assumptions been updated?","Are spare capacity and future loads included?","Are phase balancing and power factor considerations addressed?"],
-"Lighting and emergency lighting":["Are lighting levels and luminaire selections appropriate?","Are lighting controls and interfaces agreed?","Is emergency lighting coverage, duration and testing strategy confirmed?"],
-"Fire alarm and life safety systems":["Is the fire alarm category and extent agreed?","Are cause-and-effect and interfaces coordinated?","Are EVC, refuge and disabled toilet alarm requirements addressed?"],
-"Heating and cooling strategy":["Is the heating and cooling strategy agreed?","Are plant capacities, zoning and controls coordinated?","Are electrical loads and plant locations confirmed?"],
-"Ventilation and controls":["Are ventilation rates and plant duties confirmed?","Are duct routes, access and builders work coordinated?","Are BMS points, control interfaces and commissioning requirements agreed?"],
-"All-electric design strategy":["Are all building loads accounted for in the electrical demand?","Are supply capacity and resilience adequate?","Are plant and operational strategies coordinated?"],
-"Heat pumps and low-carbon heating":["Are heat pump duties, locations and performance confirmed?","Are electrical supplies and peak demand assessed?","Are acoustic, defrost and maintenance requirements addressed?"],
-"Photovoltaics and renewables":["Is the proposed PV capacity and roof area confirmed?","Are inverter locations, cabling and grid connection requirements agreed?","Are export limitation and monitoring requirements understood?"],
-"EV charging infrastructure":["What number and type of chargers are proposed?","Is spare electrical capacity available?","Are load management, metering and future expansion addressed?"],
-"Building Regulations compliance":["Have applicable statutory requirements been identified?","Are any compliance gaps or departures outstanding?","Who is responsible for submissions and approvals?"],
-"Fire strategy and compartmentation":["Are service penetrations and fire stopping coordinated?","Are fire-rated cable routes and compartment boundaries identified?","Are fire alarm and smoke control interfaces agreed?"],
-"Design calculations and technical assessments":["Which calculations or studies are outstanding?","Are assumptions and input data agreed?","Who will review and approve the results?"],
-"Cost plan and budget":["Are current proposals within the cost plan?","Have cost movements and risks been identified?","Are cost decisions required from the client?"],
-"Value engineering options":["What alternative solutions have been considered?","What are the capital, programme and operational implications?","Has the impact on performance and compliance been assessed?"],
-"Procurement strategy and lead times":["Are long-lead items identified and ordered in time?","Are technical submittals and approvals progressing?","Are procurement risks affecting the programme?"],
-"Construction progress":["Is installation progressing in line with programme?","Are there constraints or outstanding information affecting progress?","What work is planned before the next meeting?"],
-"Requests for information (RFIs)":["What technical clarification is required?","Who is responsible for responding?","Is the response affecting cost, programme or design?"],
-"Testing and commissioning":["Is the commissioning programme agreed?","Are witnessing and integrated testing requirements defined?","Are access, power, water and controls available for testing?"],
-"Training and O&M manuals":["Are O&M manuals and asset information being compiled?","What client training and demonstrations are required?","Are certificates, test results and record drawings complete?"]
+  "Project objectives and scope": [
+    "Confirm and record the agreed position for project objectives and scope.",
+    "Coordinate the outstanding requirements with the relevant team for project objectives and scope.",
+    "Obtain the information, approval or response required for project objectives and scope."
+  ],
+  "Project programme": [
+    "Confirm and record the agreed position for project programme.",
+    "Coordinate the outstanding requirements with the relevant team for project programme.",
+    "Obtain the information, approval or response required for project programme."
+  ],
+  "Design deliverables and information release": [
+    "Confirm and record the agreed position for design deliverables and information release.",
+    "Coordinate the outstanding requirements with the relevant team for design deliverables and information release.",
+    "Obtain the information, approval or response required for design deliverables and information release."
+  ],
+  "Project roles and responsibilities": [
+    "Confirm and record the agreed position for project roles and responsibilities.",
+    "Coordinate the outstanding requirements with the relevant team for project roles and responsibilities.",
+    "Obtain the information, approval or response required for project roles and responsibilities."
+  ],
+  "Client requirements and approvals": [
+    "Confirm and record the agreed position for client requirements and approvals.",
+    "Coordinate the outstanding requirements with the relevant team for client requirements and approvals.",
+    "Obtain the information, approval or response required for client requirements and approvals."
+  ],
+  "Project risks and dependencies": [
+    "Confirm and record the agreed position for project risks and dependencies.",
+    "Coordinate the outstanding requirements with the relevant team for project risks and dependencies.",
+    "Obtain the information, approval or response required for project risks and dependencies."
+  ],
+  "Change control and decisions": [
+    "Confirm and record the agreed position for change control and decisions.",
+    "Coordinate the outstanding requirements with the relevant team for change control and decisions.",
+    "Obtain the information, approval or response required for change control and decisions."
+  ],
+  "Meeting and communication arrangements": [
+    "Confirm and record the agreed position for meeting and communication arrangements.",
+    "Coordinate the outstanding requirements with the relevant team for meeting and communication arrangements.",
+    "Obtain the information, approval or response required for meeting and communication arrangements."
+  ],
+  "Architectural coordination": [
+    "Confirm and record the agreed position for architectural coordination.",
+    "Coordinate the outstanding requirements with the relevant team for architectural coordination.",
+    "Obtain the information, approval or response required for architectural coordination."
+  ],
+  "Structural coordination": [
+    "Confirm and record the agreed position for structural coordination.",
+    "Coordinate the outstanding requirements with the relevant team for structural coordination.",
+    "Obtain the information, approval or response required for structural coordination."
+  ],
+  "M&E spatial coordination": [
+    "Confirm and record the agreed position for m&e spatial coordination.",
+    "Coordinate the outstanding requirements with the relevant team for m&e spatial coordination.",
+    "Obtain the information, approval or response required for m&e spatial coordination."
+  ],
+  "Plantroom coordination": [
+    "Confirm and record the agreed position for plantroom coordination.",
+    "Coordinate the outstanding requirements with the relevant team for plantroom coordination.",
+    "Obtain the information, approval or response required for plantroom coordination."
+  ],
+  "Risers and service routes": [
+    "Confirm and record the agreed position for risers and service routes.",
+    "Coordinate the outstanding requirements with the relevant team for risers and service routes.",
+    "Obtain the information, approval or response required for risers and service routes."
+  ],
+  "Ceiling voids and builders work": [
+    "Confirm and record the agreed position for ceiling voids and builders work.",
+    "Coordinate the outstanding requirements with the relevant team for ceiling voids and builders work.",
+    "Obtain the information, approval or response required for ceiling voids and builders work."
+  ],
+  "BIM / Revit model coordination": [
+    "Confirm and record the agreed position for bim / revit model coordination.",
+    "Coordinate the outstanding requirements with the relevant team for bim / revit model coordination.",
+    "Obtain the information, approval or response required for bim / revit model coordination."
+  ],
+  "Specialist subcontractor interfaces": [
+    "Confirm and record the agreed position for specialist subcontractor interfaces.",
+    "Coordinate the outstanding requirements with the relevant team for specialist subcontractor interfaces.",
+    "Obtain the information, approval or response required for specialist subcontractor interfaces."
+  ],
+  "Access and maintenance clearances": [
+    "Confirm and record the agreed position for access and maintenance clearances.",
+    "Coordinate the outstanding requirements with the relevant team for access and maintenance clearances.",
+    "Obtain the information, approval or response required for access and maintenance clearances."
+  ],
+  "Existing services surveys": [
+    "Confirm and record the agreed position for existing services surveys.",
+    "Coordinate the outstanding requirements with the relevant team for existing services surveys.",
+    "Obtain the information, approval or response required for existing services surveys."
+  ],
+  "Existing electrical infrastructure": [
+    "Confirm and record the agreed position for existing electrical infrastructure.",
+    "Coordinate the outstanding requirements with the relevant team for existing electrical infrastructure.",
+    "Obtain the information, approval or response required for existing electrical infrastructure."
+  ],
+  "Existing mechanical infrastructure": [
+    "Confirm and record the agreed position for existing mechanical infrastructure.",
+    "Coordinate the outstanding requirements with the relevant team for existing mechanical infrastructure.",
+    "Obtain the information, approval or response required for existing mechanical infrastructure."
+  ],
+  "Existing capacity and spare capacity": [
+    "Confirm and record the agreed position for existing capacity and spare capacity.",
+    "Coordinate the outstanding requirements with the relevant team for existing capacity and spare capacity.",
+    "Obtain the information, approval or response required for existing capacity and spare capacity."
+  ],
+  "Retained and redundant equipment": [
+    "Confirm and record the agreed position for retained and redundant equipment.",
+    "Coordinate the outstanding requirements with the relevant team for retained and redundant equipment.",
+    "Obtain the information, approval or response required for retained and redundant equipment."
+  ],
+  "Phasing and decanting": [
+    "Confirm and record the agreed position for phasing and decanting.",
+    "Coordinate the outstanding requirements with the relevant team for phasing and decanting.",
+    "Obtain the information, approval or response required for phasing and decanting."
+  ],
+  "Occupied building constraints": [
+    "Confirm and record the agreed position for occupied building constraints.",
+    "Coordinate the outstanding requirements with the relevant team for occupied building constraints.",
+    "Obtain the information, approval or response required for occupied building constraints."
+  ],
+  "Heritage and fabric constraints": [
+    "Confirm and record the agreed position for heritage and fabric constraints.",
+    "Coordinate the outstanding requirements with the relevant team for heritage and fabric constraints.",
+    "Obtain the information, approval or response required for heritage and fabric constraints."
+  ],
+  "Site access and installation constraints": [
+    "Confirm and record the agreed position for site access and installation constraints.",
+    "Coordinate the outstanding requirements with the relevant team for site access and installation constraints.",
+    "Obtain the information, approval or response required for site access and installation constraints."
+  ],
+  "Incoming electrical supply and HV/LV distribution": [
+    "Confirm and record the agreed position for incoming electrical supply and hv/lv distribution.",
+    "Coordinate the outstanding requirements with the relevant team for incoming electrical supply and hv/lv distribution.",
+    "Obtain the information, approval or response required for incoming electrical supply and hv/lv distribution."
+  ],
+  "Maximum demand and load assessment": [
+    "Confirm and record the agreed position for maximum demand and load assessment.",
+    "Coordinate the outstanding requirements with the relevant team for maximum demand and load assessment.",
+    "Obtain the information, approval or response required for maximum demand and load assessment."
+  ],
+  "Small power and containment": [
+    "Confirm and record the agreed position for small power and containment.",
+    "Coordinate the outstanding requirements with the relevant team for small power and containment.",
+    "Obtain the information, approval or response required for small power and containment."
+  ],
+  "Lighting and emergency lighting": [
+    "Confirm and record the agreed position for lighting and emergency lighting.",
+    "Coordinate the outstanding requirements with the relevant team for lighting and emergency lighting.",
+    "Obtain the information, approval or response required for lighting and emergency lighting."
+  ],
+  "Fire alarm and life safety systems": [
+    "Confirm and record the agreed position for fire alarm and life safety systems.",
+    "Coordinate the outstanding requirements with the relevant team for fire alarm and life safety systems.",
+    "Obtain the information, approval or response required for fire alarm and life safety systems."
+  ],
+  "Heating and cooling strategy": [
+    "Confirm and record the agreed position for heating and cooling strategy.",
+    "Coordinate the outstanding requirements with the relevant team for heating and cooling strategy.",
+    "Obtain the information, approval or response required for heating and cooling strategy."
+  ],
+  "Ventilation and controls": [
+    "Confirm and record the agreed position for ventilation and controls.",
+    "Coordinate the outstanding requirements with the relevant team for ventilation and controls.",
+    "Obtain the information, approval or response required for ventilation and controls."
+  ],
+  "Public health services": [
+    "Confirm and record the agreed position for public health services.",
+    "Coordinate the outstanding requirements with the relevant team for public health services.",
+    "Obtain the information, approval or response required for public health services."
+  ],
+  "ICT and structured cabling": [
+    "Confirm and record the agreed position for ict and structured cabling.",
+    "Coordinate the outstanding requirements with the relevant team for ict and structured cabling.",
+    "Obtain the information, approval or response required for ict and structured cabling."
+  ],
+  "AV, security and access control": [
+    "Confirm and record the agreed position for av, security and access control.",
+    "Coordinate the outstanding requirements with the relevant team for av, security and access control.",
+    "Obtain the information, approval or response required for av, security and access control."
+  ],
+  "Standby generation and UPS": [
+    "Confirm and record the agreed position for standby generation and ups.",
+    "Coordinate the outstanding requirements with the relevant team for standby generation and ups.",
+    "Obtain the information, approval or response required for standby generation and ups."
+  ],
+  "Testing and commissioning strategy": [
+    "Confirm and record the agreed position for testing and commissioning strategy.",
+    "Coordinate the outstanding requirements with the relevant team for testing and commissioning strategy.",
+    "Obtain the information, approval or response required for testing and commissioning strategy."
+  ],
+  "All-electric design strategy": [
+    "Confirm and record the agreed position for all-electric design strategy.",
+    "Coordinate the outstanding requirements with the relevant team for all-electric design strategy.",
+    "Obtain the information, approval or response required for all-electric design strategy."
+  ],
+  "Heat pumps and low-carbon heating": [
+    "Confirm and record the agreed position for heat pumps and low-carbon heating.",
+    "Coordinate the outstanding requirements with the relevant team for heat pumps and low-carbon heating.",
+    "Obtain the information, approval or response required for heat pumps and low-carbon heating."
+  ],
+  "Photovoltaics and renewables": [
+    "Confirm and record the agreed position for photovoltaics and renewables.",
+    "Coordinate the outstanding requirements with the relevant team for photovoltaics and renewables.",
+    "Obtain the information, approval or response required for photovoltaics and renewables."
+  ],
+  "EV charging infrastructure": [
+    "Confirm and record the agreed position for ev charging infrastructure.",
+    "Coordinate the outstanding requirements with the relevant team for ev charging infrastructure.",
+    "Obtain the information, approval or response required for ev charging infrastructure."
+  ],
+  "Energy demand and consumption": [
+    "Confirm and record the agreed position for energy demand and consumption.",
+    "Coordinate the outstanding requirements with the relevant team for energy demand and consumption.",
+    "Obtain the information, approval or response required for energy demand and consumption."
+  ],
+  "Metering and energy monitoring": [
+    "Confirm and record the agreed position for metering and energy monitoring.",
+    "Coordinate the outstanding requirements with the relevant team for metering and energy monitoring.",
+    "Obtain the information, approval or response required for metering and energy monitoring."
+  ],
+  "BREEAM and sustainability targets": [
+    "Confirm and record the agreed position for breeam and sustainability targets.",
+    "Coordinate the outstanding requirements with the relevant team for breeam and sustainability targets.",
+    "Obtain the information, approval or response required for breeam and sustainability targets."
+  ],
+  "Operational performance and efficiency": [
+    "Confirm and record the agreed position for operational performance and efficiency.",
+    "Coordinate the outstanding requirements with the relevant team for operational performance and efficiency.",
+    "Obtain the information, approval or response required for operational performance and efficiency."
+  ],
+  "Carbon reduction opportunities": [
+    "Confirm and record the agreed position for carbon reduction opportunities.",
+    "Coordinate the outstanding requirements with the relevant team for carbon reduction opportunities.",
+    "Obtain the information, approval or response required for carbon reduction opportunities."
+  ],
+  "Building Regulations compliance": [
+    "Confirm and record the agreed position for building regulations compliance.",
+    "Coordinate the outstanding requirements with the relevant team for building regulations compliance.",
+    "Obtain the information, approval or response required for building regulations compliance."
+  ],
+  "BS / EN / HTM / IS standards": [
+    "Confirm and record the agreed position for bs / en / htm / is standards.",
+    "Coordinate the outstanding requirements with the relevant team for bs / en / htm / is standards.",
+    "Obtain the information, approval or response required for bs / en / htm / is standards."
+  ],
+  "Fire strategy and compartmentation": [
+    "Confirm and record the agreed position for fire strategy and compartmentation.",
+    "Coordinate the outstanding requirements with the relevant team for fire strategy and compartmentation.",
+    "Obtain the information, approval or response required for fire strategy and compartmentation."
+  ],
+  "Electrical safety and earthing": [
+    "Confirm and record the agreed position for electrical safety and earthing.",
+    "Coordinate the outstanding requirements with the relevant team for electrical safety and earthing.",
+    "Obtain the information, approval or response required for electrical safety and earthing."
+  ],
+  "Design calculations and technical assessments": [
+    "Confirm and record the agreed position for design calculations and technical assessments.",
+    "Coordinate the outstanding requirements with the relevant team for design calculations and technical assessments.",
+    "Obtain the information, approval or response required for design calculations and technical assessments."
+  ],
+  "Equipment specifications and selections": [
+    "Confirm and record the agreed position for equipment specifications and selections.",
+    "Coordinate the outstanding requirements with the relevant team for equipment specifications and selections.",
+    "Obtain the information, approval or response required for equipment specifications and selections."
+  ],
+  "Technical submissions and approvals": [
+    "Confirm and record the agreed position for technical submissions and approvals.",
+    "Coordinate the outstanding requirements with the relevant team for technical submissions and approvals.",
+    "Obtain the information, approval or response required for technical submissions and approvals."
+  ],
+  "Design risk assessments": [
+    "Confirm and record the agreed position for design risk assessments.",
+    "Coordinate the outstanding requirements with the relevant team for design risk assessments.",
+    "Obtain the information, approval or response required for design risk assessments."
+  ],
+  "Inspection, testing and certification": [
+    "Confirm and record the agreed position for inspection, testing and certification.",
+    "Coordinate the outstanding requirements with the relevant team for inspection, testing and certification.",
+    "Obtain the information, approval or response required for inspection, testing and certification."
+  ],
+  "Cost plan and budget": [
+    "Confirm and record the agreed position for cost plan and budget.",
+    "Coordinate the outstanding requirements with the relevant team for cost plan and budget.",
+    "Obtain the information, approval or response required for cost plan and budget."
+  ],
+  "Tender documentation": [
+    "Confirm and record the agreed position for tender documentation.",
+    "Coordinate the outstanding requirements with the relevant team for tender documentation.",
+    "Obtain the information, approval or response required for tender documentation."
+  ],
+  "Procurement strategy and lead times": [
+    "Confirm and record the agreed position for procurement strategy and lead times.",
+    "Coordinate the outstanding requirements with the relevant team for procurement strategy and lead times.",
+    "Obtain the information, approval or response required for procurement strategy and lead times."
+  ],
+  "Contractor proposals and alternatives": [
+    "Confirm and record the agreed position for contractor proposals and alternatives.",
+    "Coordinate the outstanding requirements with the relevant team for contractor proposals and alternatives.",
+    "Obtain the information, approval or response required for contractor proposals and alternatives."
+  ],
+  "Value engineering options": [
+    "Confirm and record the agreed position for value engineering options.",
+    "Coordinate the outstanding requirements with the relevant team for value engineering options.",
+    "Obtain the information, approval or response required for value engineering options."
+  ],
+  "Cost savings and scope reductions": [
+    "Confirm and record the agreed position for cost savings and scope reductions.",
+    "Coordinate the outstanding requirements with the relevant team for cost savings and scope reductions.",
+    "Obtain the information, approval or response required for cost savings and scope reductions."
+  ],
+  "Variations and compensation events": [
+    "Confirm and record the agreed position for variations and compensation events.",
+    "Coordinate the outstanding requirements with the relevant team for variations and compensation events.",
+    "Obtain the information, approval or response required for variations and compensation events."
+  ],
+  "Provisional sums and quotations": [
+    "Confirm and record the agreed position for provisional sums and quotations.",
+    "Coordinate the outstanding requirements with the relevant team for provisional sums and quotations.",
+    "Obtain the information, approval or response required for provisional sums and quotations."
+  ],
+  "Construction progress": [
+    "Confirm and record the agreed position for construction progress.",
+    "Coordinate the outstanding requirements with the relevant team for construction progress.",
+    "Obtain the information, approval or response required for construction progress."
+  ],
+  "Contractor coordination": [
+    "Confirm and record the agreed position for contractor coordination.",
+    "Coordinate the outstanding requirements with the relevant team for contractor coordination.",
+    "Obtain the information, approval or response required for contractor coordination."
+  ],
+  "Requests for information (RFIs)": [
+    "Confirm and record the agreed position for requests for information (rfis).",
+    "Coordinate the outstanding requirements with the relevant team for requests for information (rfis).",
+    "Obtain the information, approval or response required for requests for information (rfis)."
+  ],
+  "Site inspections and quality issues": [
+    "Confirm and record the agreed position for site inspections and quality issues.",
+    "Coordinate the outstanding requirements with the relevant team for site inspections and quality issues.",
+    "Obtain the information, approval or response required for site inspections and quality issues."
+  ],
+  "Installation sequencing and access": [
+    "Confirm and record the agreed position for installation sequencing and access.",
+    "Coordinate the outstanding requirements with the relevant team for installation sequencing and access.",
+    "Obtain the information, approval or response required for installation sequencing and access."
+  ],
+  "Testing and commissioning": [
+    "Confirm and record the agreed position for testing and commissioning.",
+    "Coordinate the outstanding requirements with the relevant team for testing and commissioning.",
+    "Obtain the information, approval or response required for testing and commissioning."
+  ],
+  "Witness testing and demonstrations": [
+    "Confirm and record the agreed position for witness testing and demonstrations.",
+    "Coordinate the outstanding requirements with the relevant team for witness testing and demonstrations.",
+    "Obtain the information, approval or response required for witness testing and demonstrations."
+  ],
+  "Training and O&M manuals": [
+    "Confirm and record the agreed position for training and o&m manuals.",
+    "Coordinate the outstanding requirements with the relevant team for training and o&m manuals.",
+    "Obtain the information, approval or response required for training and o&m manuals."
+  ],
+  "Defects and outstanding works": [
+    "Confirm and record the agreed position for defects and outstanding works.",
+    "Coordinate the outstanding requirements with the relevant team for defects and outstanding works.",
+    "Obtain the information, approval or response required for defects and outstanding works."
+  ],
+  "Practical completion and handover": [
+    "Confirm and record the agreed position for practical completion and handover.",
+    "Coordinate the outstanding requirements with the relevant team for practical completion and handover.",
+    "Obtain the information, approval or response required for practical completion and handover."
+  ]
 };
 let db=load();
 if(!db.library)db.library={categories:{},prompts:{}};
@@ -104,7 +452,8 @@ $('#content').innerHTML=head('Dashboard','Your current project commitments and p
 <section class="panel"><h2>Projects</h2>${db.projects.length?`<div class="pillrow">${db.projects.map(p=>`<span class="pill">${esc(p.name)}</span>`).join('')}</div>`:'<div class="empty">Add your first project to get started.</div>'}</section>`;
 }
 function actionList(items){if(!items.length)return '<div class="empty">Nothing to show here.</div>';return `<div class="list">${items.map(a=>`<div class="item"><input class="check" type="checkbox" ${a.done?'checked':''} onchange="toggleAction('${a.id}',this.checked)"><div class="itemmain"><div class="itemtitle" style="${a.done?'text-decoration:line-through;color:#819099':''}">${esc(a.title)}</div><div class="meta">${esc(projectName(a.project))} · ${esc(a.category||'General')} · Due ${esc(a.due||'Not set')}</div><span class="tag ${a.priority.toLowerCase()}">${a.priority}</span>${a.owner?`<span class="tag">${esc(a.owner)}</span>`:''}</div><button class="btn small" onclick="editAction('${a.id}')">Edit</button></div>`).join('')}</div>`}
-function meetingList(items){if(!items.length)return '<div class="empty">No meetings recorded yet.</div>';return `<div class="list">${items.map(m=>`<div class="item"><div class="itemmain"><div class="itemtitle">${esc(m.title)}</div><div class="meta">${esc(m.date)} · ${esc(projectName(m.project))} · ${esc(m.type)}</div></div><button class="btn small" onclick="openMeeting('${m.id}')">Open</button></div>`).join('')}</div>`}
+function meetingList(items){if(!items.length)return '<div class="empty">No meetings recorded yet.</div>';return `<div class="list">${items.map(m=>`<div class="item"><div class="itemmain"><div class="itemtitle">${esc(m.title)}</div><div class="meta">${esc(m.date)} · ${esc(projectName(m.project))} · ${esc(m.type)}</div></div><div class="actionsrow"><button class="btn small" onclick="openMeeting('${m.id}')">Open</button><button class="btn small danger" onclick="deleteMeeting('${m.id}')">Delete</button></div></div>`).join('')}</div>`}
+function deleteMeeting(id){let m=db.meetings.find(x=>x.id===id);if(!m)return;if(!confirm(`Delete meeting “${m.title}” and its captured minutes? Related actions will be retained.`))return;db.meetings=db.meetings.filter(x=>x.id!==id);save();meetings();toast('Meeting deleted')}
 function meetings(){let items=[...db.meetings].sort((a,b)=>b.date.localeCompare(a.date));$('#content').innerHTML=head('Meetings','Quickly capture the points that matter while you attend project meetings.',`<button class="btn primary" onclick="newMeeting()">＋ New meeting</button>`)+`<div class="panel"><input class="search" id="meetingSearch" placeholder="Search meetings or projects…"><div id="meetingResults" style="margin-top:12px">${meetingList(items)}</div></div>`;$('#meetingSearch').oninput=e=>$('#meetingResults').innerHTML=meetingList(items.filter(m=>(m.title+' '+projectName(m.project)+' '+m.type).toLowerCase().includes(e.target.value.toLowerCase())))}
 function newMeeting(){if(!db.projects.length){addProject();toast('Add a project first, or create a project in the form.');return}modal('Start a meeting',`<form id="meetingForm"><div class="formgrid"><div class="field full"><label>Meeting title</label><input name="title" required placeholder="e.g. Electrical design team meeting"></div><div class="field"><label>Project</label><select name="project">${db.projects.map(p=>`<option value="${p.id}">${esc(p.name)}</option>`).join('')}</select></div><div class="field"><label>Meeting type</label><select name="type">${['Design team meeting','Client progress meeting','Contractor progress meeting','Technical coordination','Site meeting','Internal project meeting','Electrical design review','Commissioning / handover','Other'].map(x=>`<option>${x}</option>`).join('')}</select></div><div class="field"><label>Date</label><input type="date" name="date" value="${today()}" required></div><div class="field"><label>Attendees (optional)</label><input name="attendees" placeholder="Names / organisations"></div><div class="field full"><label>Your role</label><select name="role"><option>Attendee</option><option>Electrical designer</option><option>Project manager</option><option>Client representative</option><option>Other</option></select></div></div><p style="text-align:right"><button class="btn primary">Start capturing</button></p></form>`);
 $('#meetingForm').onsubmit=e=>{e.preventDefault();let f=Object.fromEntries(new FormData(e.target));let m={id:uid(),...f,notes:[],created:new Date().toISOString()};db.meetings.push(m);save();closeModal();openMeeting(m.id)}}
@@ -138,18 +487,21 @@ let calDate=new Date(),calView='month';
 const dateKey=d=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
 function calEvents(key){let ev=[];db.actions.filter(a=>!a.done&&((a.start&&key>=a.start&&key<=plusDays(a.start,Math.max(1,Number(a.duration)||1)-1))||a.due===key)).forEach(a=>ev.push({id:a.id,type:'action',title:a.title,css:a.due===key&&a.due<today()?'overdue':'',prefix:a.due===key?'◆':'●'}));db.meetings.filter(m=>m.date===key).forEach(m=>ev.push({id:m.id,type:'meeting',title:m.title,css:'meeting',prefix:'▣'}));db.personal.filter(p=>p.date===key).forEach(p=>ev.push({id:p.id,type:'personal',title:p.title,css:'personal',prefix:'◆'}));return ev}
 function previewCalendar(type,id){let item=(type==='action'?db.actions:type==='meeting'?db.meetings:db.personal).find(x=>x.id===id);if(!item)return;let details=type==='action'?`<p><strong>Project:</strong> ${esc(projectName(item.project))}</p><p><strong>Owner:</strong> ${esc(item.owner||'Unassigned')}</p><p><strong>Priority:</strong> ${esc(item.priority||'Medium')}</p><p><strong>Start:</strong> ${esc(item.start||'—')}</p><p><strong>Deadline:</strong> ${esc(item.due||'—')}</p><p><strong>Duration:</strong> ${esc(item.duration||1)} day(s)</p>`:type==='meeting'?`<p><strong>Project:</strong> ${esc(projectName(item.project))}</p><p><strong>Date:</strong> ${esc(item.date)}</p><p><strong>Type:</strong> ${esc(item.type||'Meeting')}</p><p><strong>Notes:</strong> ${(item.notes||[]).length}</p>`:`<p><strong>Type:</strong> ${esc(item.type||'Personal')}</p><p><strong>Date:</strong> ${esc(item.date||'—')}</p><p><strong>Time:</strong> ${esc(item.time||'—')}</p><p><strong>Duration:</strong> ${esc(item.duration||'—')} minutes</p>`;modal('Calendar item preview',`<h3>${esc(item.title)}</h3>${details}<div class="actionsrow"><button class="btn" onclick="closeModal()">Close</button>${type==='action'?`<button class="btn primary" onclick="closeModal();editAction('${id}')">Edit action</button>`:type==='meeting'?`<button class="btn primary" onclick="closeModal();openMeeting('${id}')">Open meeting</button>`:''}</div>`)}
-function calendar(){let y=calDate.getFullYear(),mo=calDate.getMonth(),first=new Date(y,mo,1),offset=(first.getDay()+6)%7,start=calView==='month'?new Date(y,mo,1-offset):new Date(y,mo,calDate.getDate()-(calDate.getDay()+6)%7),count=calView==='month'?42:7,range=calView==='month'?calDate.toLocaleString('en-GB',{month:'long',year:'numeric'}):`${start.toLocaleDateString('en-GB',{day:'numeric',month:'short'})} – ${new Date(start.getFullYear(),start.getMonth(),start.getDate()+6).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})}`;$('#content').innerHTML=head('Calendar','Select an item to preview its details.')+`<section class="panel"><div class="calendarhead"><div class="actionsrow"><button class="btn small" id="prevMonth">‹</button><button class="btn small" id="todayMonth">Today</button><button class="btn small" id="nextMonth">›</button></div><strong>${range}</strong><div class="actionsrow"><button class="btn small ${calView==='week'?'primary':''}" onclick="calView='week';calendar()">7 days</button><button class="btn small ${calView==='month'?'primary':''}" onclick="calView='month';calendar()">Month</button></div></div><div class="calendar">${['Mon','Tue','Wed','Thu','Fri','Sat','Sun'].map(d=>`<div class="dayname">${d}</div>`).join('')}${Array.from({length:count},(_,i)=>{let d=new Date(start.getFullYear(),start.getMonth(),start.getDate()+i),key=dateKey(d),ev=calEvents(key);return `<div class="day" style="${calView==='month'&&d.getMonth()!==mo?'opacity:.38':''}"><div class="daynum">${d.getDate()}</div>${ev.map(e=>`<button type="button" class="event ${e.css}" style="display:block;width:100%;border:0;text-align:left;cursor:pointer" onclick="previewCalendar('${e.type}','${e.id}')" title="Preview ${esc(e.title)}">${e.prefix} ${esc(e.title)}</button>`).join('')}</div>`}).join('')}</div><div class="pillrow" style="margin-top:12px"><span class="pill">● Project action</span><span class="pill" style="background:#e2f1e9">▣ Meeting</span><span class="pill" style="background:#eee7f7">◆ Personal</span></div><p style="margin-top:12px"><button class="btn small" onclick="exportCalendar()">Export calendar (.ics)</button></p></section>`;$('#prevMonth').onclick=()=>{if(calView==='week')calDate.setDate(calDate.getDate()-7);else calDate=new Date(calDate.getFullYear(),calDate.getMonth()-1,1);calendar()};$('#nextMonth').onclick=()=>{if(calView==='week')calDate.setDate(calDate.getDate()+7);else calDate=new Date(calDate.getFullYear(),calDate.getMonth()+1,1);calendar()};$('#todayMonth').onclick=()=>{calDate=new Date();calendar()}}
-function templates(){$('#content').innerHTML=head('Subject & prompt library','Add, edit and remove categories, subjects and suggested notes.')+`<section class="panel"><h2>Subject categories <button class="btn small primary" onclick="editCategory()">＋ Category</button></h2>${Object.entries(db.library.categories).map(([c,ss])=>`<div style="margin:14px 0;border-bottom:1px solid #e1e8ec;padding-bottom:12px"><strong>${esc(c)}</strong> <button class="btn small" onclick="editCategory(decodeURIComponent('${encodeURIComponent(c)}'))">Rename</button> <button class="btn small danger" onclick="deleteCategory(decodeURIComponent('${encodeURIComponent(c)}'))">Delete</button><div style="margin:8px 0">${ss.map(x=>`<div class="item" style="padding:7px;margin:4px 0"><div class="itemmain">${esc(x)}</div><button class="btn small" onclick="editSubject(decodeURIComponent('${encodeURIComponent(c)}'),decodeURIComponent('${encodeURIComponent(x)}'))">Edit</button><button class="btn small danger" onclick="deleteSubject(decodeURIComponent('${encodeURIComponent(c)}'),decodeURIComponent('${encodeURIComponent(x)}'))">Delete</button></div>`).join('')}</div><button class="btn small" onclick="editSubject(decodeURIComponent('${encodeURIComponent(c)}'))">＋ Add subject</button></div>`).join('')}</section><section class="panel"><h2>Prompts <button class="btn small primary" onclick="editPrompt()">＋ Add prompt</button></h2>${Object.entries(db.library.prompts).map(([subject,ps])=>`<div style="margin:12px 0"><strong>${esc(subject)}</strong>${ps.map((x,i)=>`<div class="item" style="padding:7px;margin:5px 0"><div class="itemmain">${esc(x)}</div><button class="btn small" onclick="editPrompt(decodeURIComponent('${encodeURIComponent(subject)}'),${i})">Edit</button><button class="btn small danger" onclick="deletePrompt(decodeURIComponent('${encodeURIComponent(subject)}'),${i})">Delete</button></div>`).join('')}</div>`).join('')}</section>`}
-function editCategory(old){modal(old?'Rename category':'Add category',`<form id="libForm"><div class="field"><label>Category name</label><input name="name" value="${esc(old||'')}" required></div><p><button class="btn primary">Save</button></p></form>`);$('#libForm').onsubmit=e=>{e.preventDefault();let name=e.target.elements.namedItem("name").value.trim();if(name!==old&&db.library.categories[name])return alert('Category already exists');if(old){let entries=Object.entries(db.library.categories).map(([k,v])=>[k===old?name:k,v]);db.library.categories=Object.fromEntries(entries)}else db.library.categories[name]=[];save();closeModal();templates()}}
-function deleteCategory(c){if(!confirm('Delete this category and its subjects?'))return;delete db.library.categories[c];save();templates()}
-function editSubject(c,old){modal(old?'Edit subject':'Add subject',`<form id="libForm"><div class="field"><label>Subject</label><input name="name" value="${esc(old||'')}" required></div><p><button class="btn primary">Save</button></p></form>`);$('#libForm').onsubmit=e=>{e.preventDefault();let name=e.target.elements.namedItem("name").value.trim(),list=db.library.categories[c];if(name!==old&&list.includes(name))return alert('Subject already exists');if(old){list[list.indexOf(old)]=name;if(db.library.prompts[old]){db.library.prompts[name]=db.library.prompts[old];delete db.library.prompts[old]}}else list.push(name);save();closeModal();templates()}}
-function deleteSubject(c,x){if(!confirm('Delete this subject?'))return;db.library.categories[c]=db.library.categories[c].filter(v=>v!==x);delete db.library.prompts[x];save();templates()}
-function editPrompt(subject,i){let all=[...new Set(Object.values(db.library.categories).flat())],old=subject!==undefined&&i!==undefined?db.library.prompts[subject]?.[i]:'';modal(old?'Edit prompt':'Add prompt',`<form id="libForm"><div class="field"><label>Subject</label><select name="subject">${all.map(x=>`<option value="${esc(x)}" ${x===subject?'selected':''}>${esc(x)}</option>`).join('')}</select></div><div class="field" style="margin-top:10px"><label>Prompt text</label><textarea name="text" required>${esc(old||'')}</textarea></div><p><button class="btn primary">Save prompt</button></p></form>`);$('#libForm').onsubmit=e=>{e.preventDefault();let f=Object.fromEntries(new FormData(e.target));if(old!==undefined&&subject!==undefined&&i!==undefined)db.library.prompts[subject].splice(i,1);(db.library.prompts[f.subject]??=[]).push(f.text.trim());save();closeModal();templates()}}
-function deletePrompt(s,i){db.library.prompts[s].splice(i,1);if(!db.library.prompts[s].length)delete db.library.prompts[s];save();templates()}
-function exportMeeting(id){let m=db.meetings.find(x=>x.id===id);let acts=db.actions.filter(a=>a.meeting===id);let lines=[m.title,m.date,projectName(m.project),m.type,'',...m.notes.map(n=>`${n.kind} | ${n.category} | ${n.subject}\n${n.text}`),'','ACTIONS',...acts.map(a=>`${a.title} | ${a.priority} | ${a.owner||'Unassigned'} | Due ${a.due||'TBC'}`)];download(lines.join('\n\n'),`${safe(m.title)}-notes.txt`,'text/plain')}
-function safe(s){return (s||'export').replace(/[^a-z0-9-_]+/gi,'-').toLowerCase()}
+function calendar(){
+let y=calDate.getFullYear(),mo=calDate.getMonth(),first=new Date(y,mo,1),offset=(first.getDay()+6)%7;
+let weekStart=new Date(calDate.getFullYear(),calDate.getMonth(),calDate.getDate()-((calDate.getDay()+6)%7));
+let start=calView==='month'?new Date(y,mo,1-offset):weekStart,count=calView==='month'?42:7;
+let range=calView==='month'?calDate.toLocaleString('en-GB',{month:'long',year:'numeric'}):`${weekStart.toLocaleDateString('en-GB',{day:'numeric',month:'short'})} – ${new Date(weekStart.getFullYear(),weekStart.getMonth(),weekStart.getDate()+6).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})}`;
+let days=Array.from({length:7},(_,i)=>new Date(weekStart.getFullYear(),weekStart.getMonth(),weekStart.getDate()+i));
+let weekHtml=days.map(d=>{let key=dateKey(d),ev=calEvents(key);return `<section class="weekday"><div class="weekdayhead"><strong>${d.toLocaleDateString('en-GB',{weekday:'long'})}</strong><span>${d.toLocaleDateString('en-GB',{day:'numeric',month:'short'})}</span></div><div class="weekdayevents">${ev.length?ev.map(e=>`<button type="button" class="weekevent ${e.css}" onclick="previewCalendar('${e.type}','${e.id}')"><span>${e.prefix}</span><span class="weekeventtitle">${esc(e.title)}</span><span class="weekeventtype">${e.type==='action'?'Action':e.type==='meeting'?'Meeting':'Personal'}</span></button>`).join(''):'<div class="weekempty">No scheduled items</div>'}</div></section>`}).join('');
+let monthHtml=`<div class="calendar">${['Mon','Tue','Wed','Thu','Fri','Sat','Sun'].map(d=>`<div class="dayname">${d}</div>`).join('')}${Array.from({length:count},(_,i)=>{let d=new Date(start.getFullYear(),start.getMonth(),start.getDate()+i),key=dateKey(d),ev=calEvents(key);return `<div class="day" style="${calView==='month'&&d.getMonth()!==mo?'opacity:.38':''}"><div class="daynum">${d.getDate()}</div>${ev.map(e=>`<button type="button" class="event ${e.css}" style="display:block;width:100%;border:0;text-align:left;cursor:pointer" onclick="previewCalendar('${e.type}','${e.id}')" title="Preview ${esc(e.title)}">${e.prefix} ${esc(e.title)}</button>`).join('')}</div>`}).join('')}</div>`;
+$('#content').innerHTML=head('Calendar','Select an item to preview its details.')+`<section class="panel"><div class="calendarhead"><div class="actionsrow"><button class="btn small" id="prevMonth">‹</button><button class="btn small" id="todayMonth">Today</button><button class="btn small" id="nextMonth">›</button></div><strong>${range}</strong><div class="actionsrow"><button class="btn small ${calView==='week'?'primary':''}" onclick="calView='week';calendar()">7 days</button><button class="btn small ${calView==='month'?'primary':''}" onclick="calView='month';calendar()">Month</button></div></div>${calView==='week'?`<div class="weekagenda">${weekHtml}</div>`:monthHtml}<div class="pillrow" style="margin-top:12px"><span class="pill">● Project action</span><span class="pill" style="background:#e2f1e9">▣ Meeting</span><span class="pill" style="background:#eee7f7">◆ Personal</span></div><p style="margin-top:12px"><button class="btn small" onclick="exportCalendar()">Add to iPhone Calendar / Export (.ics)</button></p></section>`;
+$('#prevMonth').onclick=()=>{calDate.setDate(calDate.getDate()+(calView==='week'?-7:0));if(calView==='month')calDate=new Date(calDate.getFullYear(),calDate.getMonth()-1,1);calendar()};
+$('#nextMonth').onclick=()=>{calDate.setDate(calDate.getDate()+(calView==='week'?7:0));if(calView==='month')calDate=new Date(calDate.getFullYear(),calDate.getMonth()+1,1);calendar()};
+$('#todayMonth').onclick=()=>{calDate=new Date();calendar()}
+}
 function download(data,name,type){let blob=new Blob([data],{type}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;a.click();URL.revokeObjectURL(url)}
-function exportCalendar(){let ev=[];db.meetings.forEach(m=>ev.push({title:m.title,date:m.date,kind:'Meeting'}));db.actions.filter(a=>!a.done&&a.due).forEach(a=>ev.push({title:a.title,date:a.due,kind:'Action'}));db.personal.filter(p=>p.date).forEach(p=>ev.push({title:p.title,date:p.date,kind:p.type}));let fmt=d=>d.replace(/-/g,'');let body=ev.map(e=>`BEGIN:VEVENT\nUID:${uid()}@meeting-manager\nDTSTAMP:${new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d+Z/,'Z')}\nDTSTART;VALUE=DATE:${fmt(e.date)}\nSUMMARY:${e.kind}: ${e.title.replace(/[,;]/g,' ')}\nEND:VEVENT`).join('\n');download(`BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//Meeting Manager//EN\n${body}\nEND:VCALENDAR`,'meeting-manager-calendar.ics','text/calendar')}
+async function exportCalendar(){let ev=[];db.meetings.forEach(m=>ev.push({title:m.title,date:m.date,kind:'Meeting'}));db.actions.filter(a=>!a.done&&a.due).forEach(a=>ev.push({title:a.title,date:a.due,kind:'Action'}));db.personal.filter(p=>p.date).forEach(p=>ev.push({title:p.title,date:p.date,kind:p.type}));let fmt=d=>d.replace(/-/g,'');let body=ev.map(e=>`BEGIN:VEVENT\nUID:${uid()}@meeting-manager\nDTSTAMP:${new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d+Z/,'Z')}\nDTSTART;VALUE=DATE:${fmt(e.date)}\nSUMMARY:${e.kind}: ${e.title.replace(/[,;]/g,' ')}\nEND:VEVENT`).join('\n');let ics=`BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//Meeting Manager//EN\n${body}\nEND:VCALENDAR`;let file=new File([ics],'meeting-manager-calendar.ics',{type:'text/calendar'});if(navigator.share&&navigator.canShare&&navigator.canShare({files:[file]})){try{await navigator.share({files:[file],title:'Meeting Manager calendar',text:'Add these events to your iPhone Calendar'});return}catch(e){if(e.name==='AbortError')return}}download(ics,'meeting-manager-calendar.ics','text/calendar');toast('Calendar file exported. Open it on your iPhone and choose Add All.')}
 $('#exportBackup').onclick=()=>download(JSON.stringify(db,null,2),'meeting-manager-backup.json','application/json');
 $('#importBackup').onclick=()=>$('#backupFile').click();
 $('#backupFile').onchange=async e=>{let f=e.target.files[0];if(!f)return;try{let data=JSON.parse(await f.text());if(!data.projects||!data.meetings||!data.actions)throw Error();if(confirm('Restore this backup? This replaces the data currently stored in this browser.')){db={projects:data.projects,meetings:data.meetings,actions:data.actions,personal:data.personal||[],templates:data.templates||{},library:data.library||{categories:JSON.parse(JSON.stringify(categories)),prompts:JSON.parse(JSON.stringify(prompts))}};save();page('dashboard');toast('Backup restored')}}catch(err){alert('This does not appear to be a valid Meeting Manager backup.')}e.target.value=''};
